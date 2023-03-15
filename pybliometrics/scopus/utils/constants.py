@@ -19,7 +19,8 @@ DEFAULT_PATHS = {
     'SerialSearch': BASE_PATH/'serial_search',
     'SerialTitle': BASE_PATH/'serial_title',
     'PlumXMetrics': BASE_PATH/'plumx',
-    'SubjectClassifications': BASE_PATH/'subject_classification'
+    'SubjectClassifications': BASE_PATH/'subject_classification',
+    'ScivalPublicationsRetrieval': BASE_PATH/'scival_publication'
 }
 
 # Configuration file location
@@ -47,7 +48,8 @@ URLS = {
     'SerialSearch': RETRIEVAL_BASE + 'serial/title',
     'SerialTitle': RETRIEVAL_BASE + 'serial/title/issn/',
     'SubjectClassifications': RETRIEVAL_BASE + 'subject/scopus',
-    'PlumXMetrics': 'https://api.elsevier.com/analytics/plumx/'
+    'PlumXMetrics': 'https://api.elsevier.com/analytics/plumx/',
+    'ScivalPublicationsRetrieval': 'https://api.elsevier.com/analytics/scival/publication/'
 }
 
 # Throttling limits (in queries per second) // 0 = no limit
@@ -62,7 +64,8 @@ RATELIMITS = {
     'SerialSearch': 6,
     'SerialTitle': 6,
     'PlumXMetrics': 6,
-    'SubjectClassifications': 0
+    'SubjectClassifications': 0,
+    'ScivalPublicationsRetrieval': 9
 }
 
 # Other API restrictions
